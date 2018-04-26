@@ -1,0 +1,25 @@
+Instructions for using database=>
+
+	database name:db;
+	user:root
+	password:user123
+	
+Tables required:gst,temp
+Definition of gst/temp------
+
+
+	create database db;
+	use db;
+	
+	create table gst(id int auto_increment,name varchar(45),code varchar(45),
+	price float(15,2),gst float(15,2));
+	
+	create table temp(id int ,name varchar(45),code varchar(45),
+	price float(15,2),gst float(15,2));
+	
+	instructions for using :
+	npm install mysql --save
+	npm install inert --save
+	npm install path --save
+	npm start
+	(server will start at 8001)
